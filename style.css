@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url(/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: gilroy-light;
+    src: url(/Gilroy-Light.otf);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    z-index: 99;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader>h1 {
+    font-size: 8vw;
+    font-family: "Russo One", sans-serif;
+    font-weight: normal;
+}
+
+main {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy-light;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+
+    z-index: 1;
+
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #20dc20;
+}
+
+nav {
+    width: 100%;
+    height: 12vh;
+    /* border-bottom: 1px solid #dadada; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5vw;
+}
+
+nav>h3 {
+    font-size: 40px;
+    font-family: "Russo One", sans-serif;
+}
+
+nav>h3:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+    gap: 6vw;
+}
+
+nav>ul>li:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+nav>.buttons>button {
+    margin-left: 15px;
+    width: 150px;
+    padding-block: 14px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.8s;
+}
+
+nav>.buttons>button:nth-child(2):hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(65, 65, 65, 0.667);
+    cursor: pointer;
+}
+
+nav>.buttons>button:nth-child(1) {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(65, 65, 65, 0.667);
+    transition: 0.8s;
+}
+
+nav>.buttons>button:nth-child(1):hover {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.page1>h1 {
+    text-align: center;
+    position: relative;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    /* font-family: gilroy-bold; */
+    font-family: "Russo One", sans-serif;
+    font-weight: 500;
+}
+
+/* #arrow{
+    position: relative;
+    color: aquamarine;
+    font-size: 5vw;
+    left: 46%;
+    top: 35%;
+} */
+
+h5 {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#image {
+    display: none;
+    /* Initially hide the image */
+    position: absolute;
+    pointer-events: none;
+    /* Ensures the image doesn't interfere with mouse events */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
