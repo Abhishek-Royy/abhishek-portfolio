@@ -71,7 +71,7 @@ tl.to("h5", {
   yoyo: true,
 });
 
-gsap.to("main>.page2>h1", {
+tl.to("main>.page2>h1", {
   transform: "translateX(-668%)",
   fontWeight: "50",
   scrollTrigger: {
@@ -83,6 +83,16 @@ gsap.to("main>.page2>h1", {
     scrub: 1,
     pin: true,
   },
+});
+
+tl.from(".page2 > .images > img", {
+  duration: 1,
+  scale: 0,
+  rotate: 360,
+  opacity: 0,
+  stagger: 1,
+  repeat: -1,
+  yoyo: true,
 });
 
 document
