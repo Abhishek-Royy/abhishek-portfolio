@@ -206,48 +206,74 @@ h5 {
 
 @media only screen and (max-width: 768px) {
 
-    nav{
+    #background-video {
+        display: none;
+    }
+
+    .page1 {
+        background: url(https://images.pexels.com/photos/4814061/pexels-photo-4814061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    }
+
+    nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    nav > h3 {
+    nav>h3 {
         font-size: 8vw;
-        margin-top: 8vw;
+        margin-top: 10vw;
         position: relative;
-        right: 40%;
-
+        right: 38%;
+        font-weight: 100;
+        text-shadow:
+            0 0 02px #fff,
+            0 0 1px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
     }
-    
-    nav > ul > li {
+
+    nav>ul>li {
         font-size: 4vw;
-        margin-top: 4vw;
+        margin-top: 5vw;
     }
-    
 
 
-    nav > .buttons > button {
+
+    nav>.buttons>button {
         width: 40vw;
         padding-block: 3vw;
     }
-    
-    nav>.buttons{
+
+    nav>.buttons {
         position: relative;
         top: 500%;
         right: 1.5%;
     }
 
-    .page1 > h1 {
+    .page1>h1 {
         font-size: 7vw;
         margin-block: 1vw;
     }
-    
+
     h5 {
         font-size: 5vw;
         position: absolute;
         top: 85%;
         left: 52%;
+        text-shadow:
+            0 0 02px #fff,
+            0 0 1px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
     }
 }
