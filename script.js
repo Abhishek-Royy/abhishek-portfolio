@@ -95,6 +95,18 @@ tl.from(".page2 > .images > img", {
   yoyo: true,
 });
 
+gsap.from(".page3", {
+  scale: 0,
+  delay: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".page3",
+    scroller: "body",
+    scrub: 1,
+    start:"top 200%",
+  },
+});
+
 document
   .getElementById("text")
   .addEventListener("mouseenter", function (event) {
