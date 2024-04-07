@@ -78,16 +78,29 @@ body {
 
 }
 
+/* #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+} */
+
+
 #background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     z-index: -1;
-    background-position: center;
-    background-size: cover;
+    object-fit: cover;
 }
+
+
 
 .page2 {
     width: 100%;
@@ -169,14 +182,6 @@ nav>.buttons>button:nth-child(1):hover {
     font-weight: 500;
 }
 
-/* #arrow{
-    position: relative;
-    color: aquamarine;
-    font-size: 5vw;
-    left: 46%;
-    top: 35%;
-} */
-
 h5 {
     position: absolute;
     left: 50%;
@@ -195,4 +200,54 @@ h5 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav > h3 {
+        font-size: 8vw;
+        margin-top: 5vw;
+        position: relative;
+        right: 40%;
+
+    }
+    
+    nav > ul > li {
+        font-size: 4vw;
+        margin-top: 4vw;
+    }
+    
+
+
+    nav > .buttons > button {
+        width: 40vw;
+        padding-block: 3vw;
+    }
+    
+    nav>.buttons{
+        position: relative;
+        top: 500%;
+        right: 1.5%;
+    }
+
+    .page1 > h1 {
+        font-size: 7vw;
+        margin-block: 1vw;
+    }
+    
+    h5 {
+        font-size: 5vw;
+        position: absolute;
+        top: 85%;
+        left: 52%;
+    }
 }
