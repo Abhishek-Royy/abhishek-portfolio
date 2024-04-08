@@ -103,8 +103,24 @@ gsap.from(".page3", {
     trigger: ".page3",
     scroller: "body",
     scrub: 1,
-    start:"top 200%",
+    start: "top 200%",
   },
+});
+
+// VIDEOS
+document.addEventListener("DOMContentLoaded", function () {
+  let videos = document.querySelectorAll(".page2 .images video");
+
+  videos.forEach((video) => {
+
+    video.addEventListener("mouseenter", () => {
+      video.style.width = "610px";
+      video.play();
+    });
+    video.addEventListener("mouseleave", () => {
+      video.load();
+    });
+  });
 });
 
 document

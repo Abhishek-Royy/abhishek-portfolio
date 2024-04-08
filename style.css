@@ -116,7 +116,7 @@ body {
     color: #FFF;
 }
 
-.page4{
+.page4 {
     width: 100%;
     height: 100vh;
     background-color: #0fa;
@@ -226,34 +226,27 @@ h5 {
 .page2>.images {
     width: 100%;
     height: 45vh;
-    /* background-color: #0fa; */
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5vw;
 }
 
-.images>img {
-    width: 300px;
-    height: 300px;
+.images>video {
+    width: 600px;
+    height: auto;
     background: transparent;
     border-radius: 10%;
-    box-shadow:
-        0 0 02px #fff,
-        0 0 1px #fff,
-        0 0 2px #fff,
-        0 0 4px #0fa,
-        0 0 80px #0fa,
-        0 0 9px #0fa,
-        0 0 20px #0fa,
-        0 0 25px #0fa;
 }
 
 
-.page3>h1{
+
+.page3>h1 {
     font-size: 12vw;
-font-family: "Russo One", sans-serif; 
-font-weight: 200;
-text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-weight: 200;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -341,14 +334,14 @@ text-align: center;
 
     .page2>.images {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         position: relative;
-        top: 80px;
+        margin-top: 8vw;
     }
 
-    .page2>.images>img {
-        height: 150px;
-        width: 150px;
-        margin-block: 5vw;
+    .page2>.images>video {
+        height: auto;
+        width: 350px;
+        margin-block: 4vw;
     }
 }
