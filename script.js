@@ -114,7 +114,6 @@ document.addEventListener("DOMContentLoaded", function () {
   videos.forEach((video) => {
 
     video.addEventListener("mouseenter", () => {
-      video.style.width = "610px";
       video.play();
     });
     video.addEventListener("mouseleave", () => {
