@@ -1,3 +1,8 @@
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector("main"),
+//   smooth: true,
+// });
+
 var tl = gsap.timeline();
 
 /* LOADER */
@@ -112,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let videos = document.querySelectorAll(".page2 .images video");
 
   videos.forEach((video) => {
-
     video.addEventListener("mouseenter", () => {
       video.play();
     });
@@ -121,6 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+//-------------------------------------------------------------------
 
 document
   .getElementById("text")
