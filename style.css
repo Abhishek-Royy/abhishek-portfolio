@@ -418,7 +418,7 @@ p {
         height: 65vw;
     }
 
-    .icon>i {
+    .icon>a>i,i {
         font-size: 30px;
     }
 }
