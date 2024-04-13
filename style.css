@@ -27,9 +27,9 @@
 }
 
 
-::-webkit-scrollbar-thumb:hover {   
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-} 
+}
 
 
 .loader {
@@ -302,8 +302,14 @@ h5 {
 
 }
 
-.icon>i {
+.icon>a>i,
+i {
     font-size: 2vw;
+}
+
+.icon>a{
+    text-decoration: none;
+    color: #fff;
 }
 
 p {
@@ -407,12 +413,12 @@ p {
     }
 
 
-    .card-image{
-       width: 100%;
-       height: 65vw;
+    .card-image {
+        width: 100%;
+        height: 65vw;
     }
 
-    .icon>i{
+    .icon>i {
         font-size: 30px;
     }
 }
